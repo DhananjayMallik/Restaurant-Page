@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto",sans-serif;
+}
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #555; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+  }
+  .icon-bar .right{
+    display: flex;
+    justify-content: space-evenly;
+  }
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+    justify-content: center;
+  }
+  
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+  }
+  
+  .active {
+    background-color: #04AA6D; /* Add an active/current color */
+  }
+  .nav {
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background: white;
+    padding: 10px;
+    z-index: 50;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+/* Hero Section */
+.Hero_img:hover{
+    box-shadow: 5px 5px 5px white;
+    transition: 0.2s ease-in-out;
+}
+.hero {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tag {
+    background-color: #149f39;
+    padding: 5px 10px;
+    color: white;
+    align-self: flex-start;
+  }
+  
+  .hero_content h1 {
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+button{
+    padding: 10px 15px;
+    border: none;
+    background-color: #ffc066;
+    align-self: flex-start;
+    font-size: 20px;
+}
+button:hover{
+    opacity: 4;
+    box-shadow: 5px 5px 5px white;
+    transition: 0.2s ease-in-out;
+
+}
+p{
+    font-size: 30px;
+
+}
+/* Features Section */
+.Features {
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .feature {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+  }
+  .feature img {
+    width: 72px;
+  }
+  .feature:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+  }
+.divider{
+    border: 1px solid black;
+    margin: 20px 0;
+}
+body{
+    margin-left: 0px;
+    padding: 1px 2px 3px 4px;
+}
+@media (max-width: 806px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero_image{
+        display: flex;
+        justify-content: center;
+    }
+    .hero _image{
+        width: 90%;
+    }
+    .hero_content{
+        gap: 10px;
+        padding: 10px;
+    }
+    h1{
+        font-size: 32px;
+    }
+}
+
+/* mennu section */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+  }
+.grid_image{
+    border-radius: 10px;
+    width: 354px;
+    height:340px;
+    border-radius: 0px;
+
+}
+.grid_image:hover{
+    transform: scale(1.05);
+}
+  .grid {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      "I1 I1 I2 I3"
+      "I1 I1 I2 I7"
+      "I4 I5 I6 I7";
+      padding: 10px;
+  }
+  
+  .item1 {
+    grid-area: I1;
+  }
+  .item2 {
+    grid-area: I2;
+  }
+  .item3 {
+    grid-area: I3;
+  }
+  .item4 {
+    grid-area: I4;
+  }
+  .item5 {
+    grid-area: I5;
+  }
+  .item6 {
+    grid-area: I6;
+  }
+  .item7 {
+    grid-area: I7;
+  }
+  .item8{
+    grid-area: I8;
+  }
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(28, 123, 123);
+    z-index: -2;
+    align-self: center;
+}
+.Features{
+    flex-direction: column;
+}
+/* footer section */
+footer {
+  background-color: #fff0db;
+}
+.link_lists h3 {
+  margin-bottom: 10px;
+  color: gray;
+}
+.link_lists ul {
+  list-style: none;
+}
+.link_lists ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.news_letter h3 {
+  margin-bottom: 10px;
+  color: gray;
+}
+.news_letter input {
+  padding: 5px 40px;
+  margin-bottom: 10px;
+}
+.footer_container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
